@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PaginaMaestra.master.cs" Inherits="PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #000000;
+        }
+        .auto-style2 {
+            color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1 style="text-align: center">
+            <span class="auto-style2">SISTEMA DE VENTAS DE TIENDA DE CUBOS THE CUBE GIRLS</span>
+        </h1>
+    </div>
+    <div>
+        
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" style="font-weight: 700">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/cpFacturaAdi.aspx" Text="Registrar venta" Value="Registrar factura"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/cpFacturaAct.aspx" Text="Actualizar venta" Value="Actualizar factura"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/cpFacturaEli.aspx" Text="Eliminar venta" Value="Eliminar factura"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/cpFacturaCon.aspx" Text="Consultar venta" Value="Consultar factura"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/cpFacturaLis.aspx" Text="Listar venta" Value="Listar facturas"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

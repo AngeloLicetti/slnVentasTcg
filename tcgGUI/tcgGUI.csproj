@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A252FDD7-A4F1-41DD-8B26-8470C3E76280}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tcgGUI</RootNamespace>
+    <AssemblyName>tcgGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmArticuloAct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticuloAct.Designer.cs">
+      <DependentUpon>frmArticuloAct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticuloAdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticuloAdi.Designer.cs">
+      <DependentUpon>frmArticuloAdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticuloCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticuloCon.Designer.cs">
+      <DependentUpon>frmArticuloCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticuloEli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticuloEli.Designer.cs">
+      <DependentUpon>frmArticuloEli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticuloLis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticuloLis.Designer.cs">
+      <DependentUpon>frmArticuloLis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTcgIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTcgIngreso.Designer.cs">
+      <DependentUpon>frmTcgIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTcgMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTcgMenu.Designer.cs">
+      <DependentUpon>frmTcgMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUMedidaAct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUMedidaAct.Designer.cs">
+      <DependentUpon>frmUMedidaAct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUMedidaAdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUMedidaAdi.Designer.cs">
+      <DependentUpon>frmUMedidaAdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUMedidaCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUMedidaCon.Designer.cs">
+      <DependentUpon>frmUMedidaCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUMedidaEli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUMedidaEli.Designer.cs">
+      <DependentUpon>frmUMedidaEli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUMedidaLis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUMedidaLis.Designer.cs">
+      <DependentUpon>frmUMedidaLis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArticuloAct.resx">
+      <DependentUpon>frmArticuloAct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticuloAdi.resx">
+      <DependentUpon>frmArticuloAdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticuloCon.resx">
+      <DependentUpon>frmArticuloCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticuloEli.resx">
+      <DependentUpon>frmArticuloEli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticuloLis.resx">
+      <DependentUpon>frmArticuloLis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTcgIngreso.resx">
+      <DependentUpon>frmTcgIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTcgMenu.resx">
+      <DependentUpon>frmTcgMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUMedidaAct.resx">
+      <DependentUpon>frmUMedidaAct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUMedidaAdi.resx">
+      <DependentUpon>frmUMedidaAdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUMedidaCon.resx">
+      <DependentUpon>frmUMedidaCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUMedidaEli.resx">
+      <DependentUpon>frmUMedidaEli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUMedidaLis.resx">
+      <DependentUpon>frmUMedidaLis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\tcgDominio.csproj">
+      <Project>{ba0b9271-ae28-48d4-b673-90816b1312f9}</Project>
+      <Name>tcgDominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\tcgNegocio.csproj">
+      <Project>{0d5b5482-df40-48e3-9c7d-bed1e4e34104}</Project>
+      <Name>tcgNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubo-rubik.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

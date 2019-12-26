@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegistrarVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objVenta" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Venta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="VentaId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comentario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClienteId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrabajadorId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RegistrarVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrarVentaResult" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objVenta" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizarVentaResult" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objVenta" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EliminarVentaResult" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objVenta" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LeerVentaResult" type="tns:Venta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerVentas">
+        <s:complexType />
+      </s:element>
+      <s:element name="LeerVentasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LeerVentasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistrarVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistrarVenta" />
+  </wsdl:message>
+  <wsdl:message name="RegistrarVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistrarVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarVenta" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarVenta" />
+  </wsdl:message>
+  <wsdl:message name="EliminarVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LeerVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:LeerVenta" />
+  </wsdl:message>
+  <wsdl:message name="LeerVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:LeerVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LeerVentasSoapIn">
+    <wsdl:part name="parameters" element="tns:LeerVentas" />
+  </wsdl:message>
+  <wsdl:message name="LeerVentasSoapOut">
+    <wsdl:part name="parameters" element="tns:LeerVentasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsVentaSoap">
+    <wsdl:operation name="RegistrarVenta">
+      <wsdl:input message="tns:RegistrarVentaSoapIn" />
+      <wsdl:output message="tns:RegistrarVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVenta">
+      <wsdl:input message="tns:ActualizarVentaSoapIn" />
+      <wsdl:output message="tns:ActualizarVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVenta">
+      <wsdl:input message="tns:EliminarVentaSoapIn" />
+      <wsdl:output message="tns:EliminarVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerVenta">
+      <wsdl:input message="tns:LeerVentaSoapIn" />
+      <wsdl:output message="tns:LeerVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerVentas">
+      <wsdl:input message="tns:LeerVentasSoapIn" />
+      <wsdl:output message="tns:LeerVentasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsVentaSoap" type="tns:wsVentaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarVenta">
+      <soap:operation soapAction="http://tempuri.org/RegistrarVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVenta">
+      <soap:operation soapAction="http://tempuri.org/ActualizarVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVenta">
+      <soap:operation soapAction="http://tempuri.org/EliminarVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerVenta">
+      <soap:operation soapAction="http://tempuri.org/LeerVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerVentas">
+      <soap:operation soapAction="http://tempuri.org/LeerVentas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsVentaSoap12" type="tns:wsVentaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarVenta">
+      <soap12:operation soapAction="http://tempuri.org/RegistrarVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVenta">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVenta">
+      <soap12:operation soapAction="http://tempuri.org/EliminarVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerVenta">
+      <soap12:operation soapAction="http://tempuri.org/LeerVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerVentas">
+      <soap12:operation soapAction="http://tempuri.org/LeerVentas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsVenta">
+    <wsdl:port name="wsVentaSoap" binding="tns:wsVentaSoap">
+      <soap:address location="http://localhost/tcgServiciosLocales/wsVenta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsVentaSoap12" binding="tns:wsVentaSoap12">
+      <soap12:address location="http://localhost/tcgServiciosLocales/wsVenta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

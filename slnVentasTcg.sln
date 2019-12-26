@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcgNegocio", "Negocio\tcgNegocio.csproj", "{0D5B5482-DF40-48E3-9C7D-BED1E4E34104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcgGestionDatos", "GestionDatos\tcgGestionDatos.csproj", "{FC2B3A37-A09E-4B62-B889-0EC01B4F70CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcgDominio", "Dominio\tcgDominio.csproj", "{BA0B9271-AE28-48D4-B673-90816B1312F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcgGUI", "tcgGUI\tcgGUI.csproj", "{A252FDD7-A4F1-41DD-8B26-8470C3E76280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcgConsola", "tcgConsola\tcgConsola.csproj", "{446DEA21-EEC3-4480-BFA4-362213E6FAA3}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "tcgWebUsb", "http://localhost/tcgWebUsb", "{E1F3E52D-49F8-4260-B2F4-26C71BC31BFD}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{ba0b9271-ae28-48d4-b673-90816b1312f9}|tcgDominio.dll;{fc2b3a37-a09e-4b62-b889-0ec01b4f70cd}|tcgGestionDatos.dll;{0d5b5482-df40-48e3-9c7d-bed1e4e34104}|tcgNegocio.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/tcgWebUsb"
+		Debug.AspNetCompiler.PhysicalPath = "tcgWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgWebUsb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/tcgWebUsb"
+		Release.AspNetCompiler.PhysicalPath = "tcgWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgWebUsb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "tcgWeb\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "tcgServiciosLocales", "http://localhost/tcgServiciosLocales", "{30A47688-5B3E-4B71-9ED2-09E84A78DA6D}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{ba0b9271-ae28-48d4-b673-90816b1312f9}|tcgDominio.dll;{fc2b3a37-a09e-4b62-b889-0ec01b4f70cd}|tcgGestionDatos.dll;{0d5b5482-df40-48e3-9c7d-bed1e4e34104}|tcgNegocio.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/tcgServiciosLocales"
+		Debug.AspNetCompiler.PhysicalPath = "tcgServiciosLocales\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgServiciosLocales\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/tcgServiciosLocales"
+		Release.AspNetCompiler.PhysicalPath = "tcgServiciosLocales\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgServiciosLocales\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "tcgServiciosLocales\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "tcgConsumer", "http://localhost/tcgConsumer", "{252F6AFC-F48C-4525-A1E4-8F35E780B5D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/tcgConsumer"
+		Debug.AspNetCompiler.PhysicalPath = "tcgConsumer\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgConsumer\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/tcgConsumer"
+		Release.AspNetCompiler.PhysicalPath = "tcgConsumer\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgConsumer\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "tcgConsumer\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "tcgMovil", "http://localhost/tcgMovil", "{7AF0CF33-0F18-4146-9330-12035E7F0189}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/tcgMovil"
+		Debug.AspNetCompiler.PhysicalPath = "tcgMovil\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgMovil\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/tcgMovil"
+		Release.AspNetCompiler.PhysicalPath = "tcgMovil\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\tcgMovil\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "tcgMovil\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5B5482-DF40-48E3-9C7D-BED1E4E34104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5B5482-DF40-48E3-9C7D-BED1E4E34104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5B5482-DF40-48E3-9C7D-BED1E4E34104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5B5482-DF40-48E3-9C7D-BED1E4E34104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2B3A37-A09E-4B62-B889-0EC01B4F70CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2B3A37-A09E-4B62-B889-0EC01B4F70CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2B3A37-A09E-4B62-B889-0EC01B4F70CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2B3A37-A09E-4B62-B889-0EC01B4F70CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0B9271-AE28-48D4-B673-90816B1312F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0B9271-AE28-48D4-B673-90816B1312F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0B9271-AE28-48D4-B673-90816B1312F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0B9271-AE28-48D4-B673-90816B1312F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A252FDD7-A4F1-41DD-8B26-8470C3E76280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A252FDD7-A4F1-41DD-8B26-8470C3E76280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A252FDD7-A4F1-41DD-8B26-8470C3E76280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A252FDD7-A4F1-41DD-8B26-8470C3E76280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446DEA21-EEC3-4480-BFA4-362213E6FAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446DEA21-EEC3-4480-BFA4-362213E6FAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446DEA21-EEC3-4480-BFA4-362213E6FAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446DEA21-EEC3-4480-BFA4-362213E6FAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F3E52D-49F8-4260-B2F4-26C71BC31BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F3E52D-49F8-4260-B2F4-26C71BC31BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F3E52D-49F8-4260-B2F4-26C71BC31BFD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F3E52D-49F8-4260-B2F4-26C71BC31BFD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{30A47688-5B3E-4B71-9ED2-09E84A78DA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A47688-5B3E-4B71-9ED2-09E84A78DA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A47688-5B3E-4B71-9ED2-09E84A78DA6D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A47688-5B3E-4B71-9ED2-09E84A78DA6D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{252F6AFC-F48C-4525-A1E4-8F35E780B5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252F6AFC-F48C-4525-A1E4-8F35E780B5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252F6AFC-F48C-4525-A1E4-8F35E780B5D4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{252F6AFC-F48C-4525-A1E4-8F35E780B5D4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7AF0CF33-0F18-4146-9330-12035E7F0189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF0CF33-0F18-4146-9330-12035E7F0189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF0CF33-0F18-4146-9330-12035E7F0189}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF0CF33-0F18-4146-9330-12035E7F0189}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

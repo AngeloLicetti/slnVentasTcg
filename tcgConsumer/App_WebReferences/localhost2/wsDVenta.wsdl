@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegistrarDVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDVenta" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DVenta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DVentaId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Precio" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="VentaId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArticuloId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RegistrarDVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrarDVentaResult" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarDVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDVenta" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarDVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizarDVentaResult" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarDVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDVenta" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarDVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EliminarDVentaResult" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerDVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDVenta" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerDVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LeerDVentaResult" type="tns:DVenta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LeerDVentas">
+        <s:complexType />
+      </s:element>
+      <s:element name="LeerDVentasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LeerDVentasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistrarDVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistrarDVenta" />
+  </wsdl:message>
+  <wsdl:message name="RegistrarDVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistrarDVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarDVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarDVenta" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarDVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarDVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarDVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarDVenta" />
+  </wsdl:message>
+  <wsdl:message name="EliminarDVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarDVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LeerDVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:LeerDVenta" />
+  </wsdl:message>
+  <wsdl:message name="LeerDVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:LeerDVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LeerDVentasSoapIn">
+    <wsdl:part name="parameters" element="tns:LeerDVentas" />
+  </wsdl:message>
+  <wsdl:message name="LeerDVentasSoapOut">
+    <wsdl:part name="parameters" element="tns:LeerDVentasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsDVentaSoap">
+    <wsdl:operation name="RegistrarDVenta">
+      <wsdl:input message="tns:RegistrarDVentaSoapIn" />
+      <wsdl:output message="tns:RegistrarDVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDVenta">
+      <wsdl:input message="tns:ActualizarDVentaSoapIn" />
+      <wsdl:output message="tns:ActualizarDVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDVenta">
+      <wsdl:input message="tns:EliminarDVentaSoapIn" />
+      <wsdl:output message="tns:EliminarDVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVenta">
+      <wsdl:input message="tns:LeerDVentaSoapIn" />
+      <wsdl:output message="tns:LeerDVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVentas">
+      <wsdl:input message="tns:LeerDVentasSoapIn" />
+      <wsdl:output message="tns:LeerDVentasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsDVentaSoap" type="tns:wsDVentaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarDVenta">
+      <soap:operation soapAction="http://tempuri.org/RegistrarDVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDVenta">
+      <soap:operation soapAction="http://tempuri.org/ActualizarDVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDVenta">
+      <soap:operation soapAction="http://tempuri.org/EliminarDVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVenta">
+      <soap:operation soapAction="http://tempuri.org/LeerDVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVentas">
+      <soap:operation soapAction="http://tempuri.org/LeerDVentas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsDVentaSoap12" type="tns:wsDVentaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarDVenta">
+      <soap12:operation soapAction="http://tempuri.org/RegistrarDVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDVenta">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarDVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDVenta">
+      <soap12:operation soapAction="http://tempuri.org/EliminarDVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVenta">
+      <soap12:operation soapAction="http://tempuri.org/LeerDVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerDVentas">
+      <soap12:operation soapAction="http://tempuri.org/LeerDVentas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsDVenta">
+    <wsdl:port name="wsDVentaSoap" binding="tns:wsDVentaSoap">
+      <soap:address location="http://localhost/tcgServiciosLocales/wsDVenta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsDVentaSoap12" binding="tns:wsDVentaSoap12">
+      <soap12:address location="http://localhost/tcgServiciosLocales/wsDVenta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
